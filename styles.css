@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: o;
+  /* box-sizing: border-box; */
+}
+body {
+  background-color: black;
+  overflow: hidden;
+}
+.gameWrapper {
+  height: 500px;
+  width: 320px;
+  /* border: green solid 2px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.name {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.scoreText {
+  color: white;
+  text-align: center;
+}
+.canvas1 {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.gameOverWrapper {
+  color: white;
+  background-color:green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 150px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+.startBtn{
+   position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+  color: white;
+  width: 100px;
+  height: 25px;
+  border-radius: 5ps;
+  box-shadow: white 1px 1px;
+  cursor: pointer;
+  display: none;
+}
+.gameWinWrapper{
+  color: white;
+  background-color:green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 150px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+
+}
+.startBtn:hover{
+   box-shadow: inset white 1px 1px;
+
+}
+.gameOverActive{
+  display: flex;
+}
+.startBtnActive{
+  display: block;
+}
+

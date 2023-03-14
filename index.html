@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pac Man Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="wakaSound" src="waka.wav"></audio>
+    <audio id="gameWinSound" src="gameWin.wav"></audio>
+    <audio id="gameLoseSound" src="gameOver.wav"></audio>
+    <div class="gameWrapper">
+      <p class="name">Pac Man</p>
+        <p class="scoreText" id="scoreText">Score: <span id="score">0</span></p>
+      <canvas class="canvas1" id="canvas1"> </canvas>
+      <div class="gameOverWrapper" id="gameOverWrapper">
+        <p>You Have been Ghosted Your Score was: <span id="scoreValue"></span></p>
+      </div>
+      <div class="gameWinWrapper" id="gameWinWrapper">
+        <p>You Scored Maximum Points: <span id="scoreValue1"></span></p>
+      </div>
+       <button class="startBtn" id="startBtn">Restart Game</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
